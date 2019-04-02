@@ -1,14 +1,8 @@
----
-title: "Inspecting Arson Activity in Kansas City"
-author: "Andrew Pierson"
-date: "2/5/2019"
-output: 
-  html_document:
-    keep_md: true
----
+## Inspecting Arson Activity in Kansas City
+### Author: Andrew Pierson
+### Date: 2/5/2019
 
 Using the quadrat count approach to examine the point pattern of arson crime in KCMO. Here I will try out multiple quadrats and conduct a chi-square test to determine whether the arson events show clustering or not. 
-
 
 ```r
 knitr::opts_chunk$set(echo = TRUE)
@@ -100,7 +94,7 @@ plot(KCMO, main="Arson in Kansas City, MO")
 plot(Arson.points,add=TRUE, col="red")
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 1-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%201-1.png)<!-- -->
 
 ```r
 #Define the events
@@ -119,7 +113,7 @@ plot(quads, add = TRUE)
 points(Arson.points, col = 'red', cex = 0.5)
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 1-2.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%201-2.png)<!-- -->
 
 ```r
 #Count the events
@@ -130,7 +124,7 @@ plot(events)
 plot(KCMO, add = TRUE)
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 1-3.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%201-3.png)<!-- -->
 
 ```r
 #Find the frequency
@@ -180,7 +174,6 @@ VMR
 
 Creating a kernel density estimate map of arson and interpret the results. The results show a dense concentration of arson activity in the heart of the KCMO area. 
 
-
 ```r
 #Calculate the kernel density
 Arson.density <- kde.points(Arson, lims = KCMO)
@@ -196,11 +189,10 @@ plot(KCMO, add = TRUE)
 title("Arson in KCMO")
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 2-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%202-1.png)<!-- -->
 
 
 Examining the G, F, and K functions to determine whether the arson events show clustering or not.There is statistically significant clustering of arson activity. 
-
 
 ```r
 #Load packages required to complete
@@ -251,7 +243,7 @@ Gf <- envelope(Arson.ppp, Gest)
 plot(Gf)
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 3-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%203-1.png)<!-- -->
 
 ```r
 #Correction for edge effects 
@@ -272,7 +264,7 @@ Gf <- envelope(Arson.ppp, Gest, correction="border")
 plot(Gf)
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 3-2.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%203-2.png)<!-- -->
 
 ```r
 mad.test(Arson.ppp,Gest)
@@ -348,7 +340,7 @@ Ff <- envelope(Arson.ppp, Fest, correction="border")
 plot(Ff)
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 3-3.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%203-3.png)<!-- -->
 
 ```r
 mad.test(Arson.ppp,Fest)
@@ -424,7 +416,7 @@ Kf <- envelope(Arson.ppp, Kest, correction="border")
 plot(Kf)
 ```
 
-![](Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task B Part 3-4.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Inspecting_Arson_Activity_in_Kansas_City_files/figure-html/Task%20B%20Part%203-4.png)<!-- -->
 
 ```r
 mad.test(Arson.ppp,Kest)
