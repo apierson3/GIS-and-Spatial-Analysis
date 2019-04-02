@@ -33,7 +33,7 @@ county <- readOGR(".","County_2010Census_DP1")
 plot(county, main="US Map")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-1.png)<!-- -->
+![]Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-1.png<!-- -->
 
 ```r
 #Print out headers for data attached to the shapefile
@@ -869,7 +869,7 @@ head(overdose)
 ```
 
 ```
-##   ï..State State.Name Year    Month        Indicator Data.Value
+##   Ã¯..State State.Name Year    Month        Indicator Data.Value
 ## 1       AK         AK 2015  January Number of Deaths      4,034
 ## 2       AK         AK 2015 February Number of Deaths      4,084
 ## 3       AK         AK 2015    March Number of Deaths      4,101
@@ -931,7 +931,7 @@ levels(overdose$State.Name)
 #overdose <- overdose %>% gather(key = Indicator, value = Data.Value) 
 overdose <- overdose %>% mutate(row = row_number()) %>% spread(key = Indicator, value = Data.Value)
 #Rename the column to more user friendly names
-overdose <- overdose %>% rename("Abbv State" = "ï..State", "State Name" = "State.Name", "Year" = "Year", "Month" = "Month", "Predicted Value" = "Predicted.Value", "Percent Complete" = "Percent.Complete", "Percent Pending Investigation" = "Percent.Pending.Investigation", "Cocaine" = "Cocaine (T40.5)", "Heroin" = "Heroin (T40.1)", "Methadone" = "Methadone (T40.3)", "Natural & Semi-Synthetic Opioids" = "Natural & semi-synthetic opioids (T40.2)", "Number of Deaths" = "Number of Deaths", "Number of Drug Overdose Deaths" = "Number of Drug Overdose Deaths", "Opioids" = "Opioids (T40.0-T40.4,T40.6)", "Percent With Drugs Specified" = "Percent with drugs specified", "Psychostimulants" = "Psychostimulants with abuse potential (T43.6)", "Synthetic Opioids" = "Synthetic opioids, excl. methadone (T40.4)")
+overdose <- overdose %>% rename("Abbv State" = "Ã¯..State", "State Name" = "State.Name", "Year" = "Year", "Month" = "Month", "Predicted Value" = "Predicted.Value", "Percent Complete" = "Percent.Complete", "Percent Pending Investigation" = "Percent.Pending.Investigation", "Cocaine" = "Cocaine (T40.5)", "Heroin" = "Heroin (T40.1)", "Methadone" = "Methadone (T40.3)", "Natural & Semi-Synthetic Opioids" = "Natural & semi-synthetic opioids (T40.2)", "Number of Deaths" = "Number of Deaths", "Number of Drug Overdose Deaths" = "Number of Drug Overdose Deaths", "Opioids" = "Opioids (T40.0-T40.4,T40.6)", "Percent With Drugs Specified" = "Percent with drugs specified", "Psychostimulants" = "Psychostimulants with abuse potential (T43.6)", "Synthetic Opioids" = "Synthetic opioids, excl. methadone (T40.4)")
 #Determine the number of columns to change
 colnames(overdose)
 ```
