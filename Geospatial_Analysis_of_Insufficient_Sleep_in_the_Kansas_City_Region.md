@@ -1,14 +1,9 @@
----
-title: "Geospatial Analysis of Insufficient Sleep in the Kansas City Region"
-author: "Andrew Pierson"
-date: "2/16/2019"
-output:
-  html_document:
-    keep_md: true
----
+### Geospatial Analysis of Insufficient Sleep in the Kansas City Region
+#### Author: Andrew Pierson"
+#### Date: 2/16/2019
+
 
 Creating a census tract map for the greater Kansas City region for analysis.
-
 
 ```r
 knitr::opts_chunk$set(echo = TRUE)
@@ -126,7 +121,7 @@ par(mar = c(0, 0, 0, 0))
 plot(kc)
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task A Part 1 end-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20A%20Part%201-1.png)<!-- -->
 
 ```r
 # Check the CRS of kc
@@ -184,7 +179,7 @@ Sleep_KC.sf <- st_as_sf(Sleep_KC)
 plot(Sleep_KC.sf["indictr"], main = "Percent with Insufficient Sleep")
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task A Part 1 end-2.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20A%20Part%201-2.png)<!-- -->
 
 ```r
 # Create a color pallete
@@ -293,7 +288,7 @@ title("\r\nKC Percent with Insufficient Sleep (Local Moran's I)", cex.main = 1)
 add.scale()
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task A Part 2-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20A%20Part%202-1.png)<!-- -->
 
 ```r
 # Create a shading scheme for p-values
@@ -306,7 +301,7 @@ title("\r\nKC Percent with Insufficient Sleep (Local p-value)", cex.main = 1)
 add.scale()
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task A Part 2-2.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20A%20Part%202-2.png)<!-- -->
 
 ```r
 # Plot the adjusted p-values
@@ -318,7 +313,7 @@ title("\r\nKC Percent with Insufficient Sleep (Local Bonferroni Adjusted  p-valu
 add.scale()
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task A Part 2-3.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20A%20Part%202-3.png)<!-- -->
 
 ```r
 # Create a matrix to place the simulated local Moran's I
@@ -342,7 +337,7 @@ title("\r\nKC Percent with Insufficient Sleep (Monte Carlo-Simulated FDR Adjuste
 add.scale()
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task A Part 2-4.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20A%20Part%202-4.png)<!-- -->
 
 
 ```r
@@ -383,7 +378,7 @@ plot(wa.king)
 plot(house.points, add = TRUE, col = "red")
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task B Part 1-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20B%20Part%201-1.png)<!-- -->
 
 
 I found the good predictors to include: sqft_Living15, sqft_basement, sqft_above, grade, view, floors, sqft_living, bedrooms, and bathrooms. All of these predictors had extremely low p-values, represented in scientific notation. The predictors I chose all have p-values below a value of 0.001.
@@ -445,7 +440,7 @@ IQR(houseSample$price)
 hist(houseSample$price)
 ```
 
-![](Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task B Part 2-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Geospatial_Analysis_of_Insufficient_Sleep_in_the_Kansas_City_Region_files/figure-html/Task%20B%20Part%202-1.png)<!-- -->
 
 ```r
 # Skewness of house sample
