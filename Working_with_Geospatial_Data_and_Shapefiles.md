@@ -1,14 +1,9 @@
----
-title: "Working with Geospatial Data and Shapefiles"
-author: "Andrew Pierson"
-date: "1/14/2019"
-output:
-  html_document:
-    keep_md: true
----
+### title: "Working with Geospatial Data and Shapefiles"
+#### author: "Andrew Pierson"
+#### date: "1/14/2019"
 
 
-#### A noticeable pattern in the choropleth map titled Average Household Size of Renters is that renter household size typically tends to be larger in Missouri and Kansas and smaller in Iowa. Another pattern within Average Household Size of Renters is that renter household size in northern and southern Missouri are greater than anywhere else in the state. In the map Average Household Size of Owners the state of Missouri choropleth reveals that there is a larger population of home owners with large household sizes on the east side of the state. 
+A noticeable pattern in the choropleth map titled Average Household Size of Renters is that renter household size typically tends to be larger in Missouri and Kansas and smaller in Iowa. Another pattern within Average Household Size of Renters is that renter household size in northern and southern Missouri are greater than anywhere else in the state. In the map Average Household Size of Owners the state of Missouri choropleth reveals that there is a larger population of home owners with large household sizes on the east side of the state. 
 
 
 ```r
@@ -762,7 +757,7 @@ title(main = "Average Household Size of Owners")
 ![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-7.png)<!-- -->
 
 
-#### The choropleth map of county corn yields in the tri-state area reveals that Kansas and Missouri both have much higher corn yields than Kansas. 
+The choropleth map of county corn yields in the tri-state area reveals that Kansas and Missouri both have much higher corn yields than Kansas. 
 
 
 ```r
@@ -848,7 +843,7 @@ imap %>% addWMSTiles("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cg
 ```
 
 
-#### In this choropleth map of the overdoses in the United States there are a couple patterns that are noticeable in the New England region and the noth-west region of the United States. These trends show that there were a higher number of total deaths in those areas during May of 2017.
+In this choropleth map of the overdoses in the United States there are a couple patterns that are noticeable in the New England region and the noth-west region of the United States. These trends show that there were a higher number of total deaths in those areas during May of 2017.
 
 
 ```r
