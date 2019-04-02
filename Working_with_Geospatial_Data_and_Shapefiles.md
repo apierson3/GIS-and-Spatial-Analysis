@@ -33,7 +33,7 @@ county <- readOGR(".","County_2010Census_DP1")
 plot(county, main="US Map")
 ```
 
-![]Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-1.png<!-- -->
+![]https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-1.png<!-- -->
 
 ```r
 #Print out headers for data attached to the shapefile
