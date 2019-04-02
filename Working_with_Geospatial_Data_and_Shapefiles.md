@@ -1,6 +1,6 @@
 ## Working with Geospatial Data and Shapefiles
-#### author: "Andrew Pierson"
-#### date: "1/14/2019"
+#### Author: Andrew Pierson
+#### Date: 1/14/2019
 
 
 A noticeable pattern in the choropleth map titled Average Household Size of Renters is that renter household size typically tends to be larger in Missouri and Kansas and smaller in Iowa. Another pattern within Average Household Size of Renters is that renter household size in northern and southern Missouri are greater than anywhere else in the state. In the map Average Household Size of Owners the state of Missouri choropleth reveals that there is a larger population of home owners with large household sizes on the east side of the state. 
