@@ -713,7 +713,7 @@ plot(mo)
 title(main = "Missouri")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-2.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-2.png)<!-- -->
 
 ```r
 #Plot kansas
@@ -721,7 +721,7 @@ plot(ks)
 title(main = "Kansas")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-3.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-3.png)<!-- -->
 
 ```r
 #Plot iowa
@@ -729,7 +729,7 @@ plot(ia)
 title(main = "Iowa")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-4.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-4.png)<!-- -->
 
 ```r
 #Combine spatial polygon dataframes 
@@ -739,7 +739,7 @@ plot(tri_state)
 title(main = "Tri-State Area")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-5.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-5.png)<!-- -->
 
 ```r
 #Plot choropleth of household renter size in the tri-state
@@ -749,7 +749,7 @@ choro.legend(533000,161000,vacant.shades)
 title(main = "Average Household Size of Renters")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-6.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-6.png)<!-- -->
 
 ```r
 #Plot choropleth of household owner size in the tri state
@@ -759,7 +759,7 @@ choro.legend(533000,161000,vacant.shades)
 title(main = "Average Household Size of Owners")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 1-7.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%201-7.png)<!-- -->
 
 
 #### The choropleth map of county corn yields in the tri-state area reveals that Kansas and Missouri both have much higher corn yields than Kansas. 
@@ -826,7 +826,7 @@ choro.legend(533000,161000,vacant.shades)
 title(main = "Tri-State Corn Yields")
 ```
 
-![](Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part A Task 2-1.png)<!-- -->
+![](https://github.com/apierson3/GIS-and-Spatial-Analysis/blob/master/Working_with_Geospatial_Data_and_Shapefiles_files/figure-html/Part%20A%20Task%202-1.png)<!-- -->
 
 
 ### Task 3
@@ -841,16 +841,11 @@ imap <- leaflet() %>% addTiles() %>% setView(lng = -94.397041, lat = 38.882149, 
 imap
 ```
 
-<!--html_preserve--><div id="htmlwidget-8a9968e6be4a73311fa0" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8a9968e6be4a73311fa0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[38.882149,-94.397041],9,[]]},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 ```r
 #Overlay raster data with real-time weather to the map
 imap %>% addWMSTiles("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", layers = "nexrad-n0r-900913", group = "base_reflect", options = WMSTileOptions(format = "image/png", transparent = TRUE), attribution = "Weather data ? 2012 IEM Nexrad")
 ```
-
-<!--html_preserve--><div id="htmlwidget-dc0566bfe1c7966c4c31" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dc0566bfe1c7966c4c31">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addWMSTiles","args":["http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",null,"base_reflect",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","attribution":"Weather data ? 2012 IEM Nexrad","layers":"nexrad-n0r-900913"}]}],"setView":[[38.882149,-94.397041],9,[]]},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 
 #### In this choropleth map of the overdoses in the United States there are a couple patterns that are noticeable in the New England region and the noth-west region of the United States. These trends show that there were a higher number of total deaths in those areas during May of 2017.
@@ -1041,5 +1036,3 @@ p <- plot_geo(overdose, locationmode = 'USA-states') %>% add_trace(z = ~`Total D
 chart_link = api_create(p, filename = "choropleth-ag")
 chart_link
 ```
-
-<iframe src="https://plot.ly/~piersonas/1.embed" width="800" height="600" id="igraph" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
